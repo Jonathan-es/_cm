@@ -30,11 +30,9 @@ def calculate_compound_interest():
 
     # 2. Calculation Loop
     for year in years:
-        # Simple Interest: Grows in a straight line
         # Formula: A = P(1 + rt)
         amount_simple = P * (1 + r * year)
-        
-        # Compound Interest: Grows faster (Money makes more money)
+
         # Formula: A = P(1 + r/n)^(n*t)
         amount_compound = P * (1 + r / n) ** (n * year)
         
